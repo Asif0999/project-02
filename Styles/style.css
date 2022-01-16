@@ -1,0 +1,184 @@
+/* font popin form google link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* body part changes */
+body{
+
+    font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+}
+/* -----------------
+ navigation bar
+  ------------*/
+  .nav-bar{
+      background-color: rgba(26, 81, 231, 0.836);
+  }
+.menu-bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px 50px;
+}
+
+/* main part change */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* section style and changed */
+.container{
+    width: 870px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-top: 22px;
+    border-radius: 5%;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+    
+}
+
+/* top-players style  */
+.top-player{
+    margin-bottom: 30px;
+}
+.section-titel{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin: 16px;
+    font-size: 18px;
+}
+
+/* top blogs style */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-titel{
+    width: 164px;
+    height: 68px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-author{
+    color: #9F9F9F;
+}
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+    
+}
+/*----------------
+ Latest Courses
+---------------------- */
+.courses{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    margin: 20px 20px;
+}
+.courses .course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-author{
+    color: #ED6B4F;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.emty{
+    color: #AEAEAE
+    ;
+}
+.course-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clock{
+    font-size: 14.6913px;
+    background-color: #FEE5DF;
+    width:  94.83px;
+    height:  29.38px;
+    border-radius: 14.6913px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Making Website Responsive and Adding Media Queires */
+
+/* MOBAIL DEVICES */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players , .blogs,.courses{
+       /* display: grid; */
+       grid-template-columns: repeat(1, 1fr);
+      
+       
+    }
+    .player, .blog ,.courses{
+        flex-direction: column;
+    }
+    .menu-bar{
+        grid-template-rows: repeat(1,1fr);
+        width: 80%;
+    }
+    
+    
+}
+/* TABLET DEVICES */
+@media only screen and (min-width:689px) and (max-width:995px) {
+    .container{
+        width: 100%;
+    }
+    .players , .blogs,.courses{
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+       
+        
+     }
+     .player, .blog ,.courses{
+        flex-direction: column;
+    }
+    .menu-bar{
+        grid-template-rows: repeat(1,1fr);
+        width: 110%;
+    }
+    
+}
